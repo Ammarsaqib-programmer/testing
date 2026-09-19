@@ -46,23 +46,23 @@ st.markdown("""
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap');
 
     :root {
-        --ivory: #F8F6F0;
-        --paper: #FFFDF8;
-        --sage: #5F8D78;
-        --sage-dark: #3F6B59;
-        --sage-soft: #E7F0EA;
-        --peach: #E9A889;
-        --peach-soft: #FBE9DF;
-        --ink: #24332D;
-        --muted: #66736D;
-        --line: #D9DED8;
-        --gold: #B88A4A;
-        --danger: #B65B55;
-        --warning: #B47A3C;
+        --ivory: #EEF3F6;
+        --paper: #F9FBFC;
+        --sage: #3D6A8A;
+        --sage-dark: #274A63;
+        --sage-soft: #E1EBF0;
+        --peach: #D99B6C;
+        --peach-soft: #F3E6D6;
+        --ink: #22303F;
+        --muted: #55677A;
+        --line: #D6DEE4;
+        --gold: #B98A4E;
+        --danger: #B5524A;
+        --warning: #B98A3E;
     }
 
     .stApp {
-        background: linear-gradient(180deg, #F8F6F0 0%, #F5F3EC 100%) !important;
+        background: linear-gradient(180deg, #EEF3F6 0%, #E7EEF3 100%) !important;
         color: var(--ink) !important;
         font-family: 'DM Sans', sans-serif;
     }
@@ -86,13 +86,13 @@ st.markdown("""
     .inst-header {
         position: relative;
         overflow: hidden;
-        background: linear-gradient(135deg, #EEF4EF 0%, #FBE9DF 100%);
-        border: 1px solid #D8E2DA;
+        background: linear-gradient(135deg, #E7F0F5 0%, #F3E6D6 100%);
+        border: 1px solid #D3DCE2;
         border-left: 7px solid var(--sage);
         border-radius: 18px;
         padding: 30px 38px;
         margin-bottom: 24px;
-        box-shadow: 0 10px 28px rgba(63,107,89,.08);
+        box-shadow: 0 10px 28px rgba(39,74,99,.08);
     }
     .inst-header:after {
         content: "ORIC";
@@ -102,7 +102,7 @@ st.markdown("""
         font-family: 'Libre Baskerville', serif;
         font-size: 4.5rem;
         font-weight: 700;
-        color: rgba(95,141,120,.08);
+        color: rgba(61,106,138,.08);
         letter-spacing: .08em;
     }
     .inst-header .sub-caption {
@@ -121,7 +121,7 @@ st.markdown("""
     }
     .inst-header p {
         margin: 0;
-        color: #58675F !important;
+        color: #52697A !important;
         font-size: .91rem;
         max-width: 78ch;
         line-height: 1.6;
@@ -129,12 +129,12 @@ st.markdown("""
 
     /* Cards */
     .panel-card {
-        background: rgba(255,253,248,.92);
+        background: rgba(249,251,252,.92);
         border: 1px solid var(--line);
         border-radius: 16px;
         padding: 24px 26px;
         margin-bottom: 18px;
-        box-shadow: 0 8px 24px rgba(36,51,45,.055);
+        box-shadow: 0 8px 24px rgba(34,48,63,.055);
     }
     .panel-header {
         font-family: 'Libre Baskerville', Georgia, serif;
@@ -142,13 +142,13 @@ st.markdown("""
         font-weight: 700;
         color: var(--sage-dark) !important;
         padding-bottom: 11px;
-        border-bottom: 2px solid #D8E6DD;
+        border-bottom: 2px solid #D3E0E6;
         margin-bottom: 18px;
     }
     .field-group-label {
         font-size: .73rem;
         font-weight: 700;
-        color: #B06F50 !important;
+        color: #A9713E !important;
         text-transform: uppercase;
         letter-spacing: .09em;
         margin: 17px 0 7px 0;
@@ -161,14 +161,14 @@ st.markdown("""
         color: var(--ink) !important;
     }
     .stTextInput input, .stTextArea textarea {
-        background: #FFFDF9 !important;
-        border: 1px solid #CBD5CE !important;
+        background: #F9FBFC !important;
+        border: 1px solid #CAD5DC !important;
         border-radius: 10px !important;
         box-shadow: none !important;
     }
     .stTextInput input:focus, .stTextArea textarea:focus {
         border-color: var(--sage) !important;
-        box-shadow: 0 0 0 2px rgba(95,141,120,.12) !important;
+        box-shadow: 0 0 0 2px rgba(61,106,138,.12) !important;
     }
 
     /* Buttons */
@@ -177,18 +177,18 @@ st.markdown("""
         font-weight: 700 !important;
         font-size: .86rem !important;
         min-height: 42px !important;
-        border: 1px solid #C8D4CC !important;
-        background: #F7FAF7 !important;
+        border: 1px solid #C7D2DA !important;
+        background: #F2F6F8 !important;
         color: var(--sage-dark) !important;
         transition: all .15s ease;
     }
     div.stButton > button:hover, .stLinkButton > a:hover {
         border-color: var(--sage) !important;
         transform: translateY(-1px);
-        box-shadow: 0 5px 14px rgba(63,107,89,.12);
+        box-shadow: 0 5px 14px rgba(39,74,99,.12);
     }
     div.stButton > button[kind="primary"] {
-        background: linear-gradient(135deg, var(--sage), #6FA087) !important;
+        background: linear-gradient(135deg, var(--sage), #4F84A8) !important;
         color: white !important;
         border: none !important;
     }
@@ -198,7 +198,7 @@ st.markdown("""
         display: inline-block;
         padding: 5px 10px;
         background: var(--sage-soft);
-        border: 1px solid #C9DED1;
+        border: 1px solid #C6D8E0;
         border-radius: 999px;
         font-size: .7rem;
         font-weight: 700;
@@ -212,8 +212,8 @@ st.markdown("""
         align-items: center;
         gap: 20px;
         padding: 20px 22px;
-        background: linear-gradient(135deg, #F1F6F2, #FFF6F0);
-        border: 1px solid #D9E3DC;
+        background: linear-gradient(135deg, #EDF3F6, #F5EEE4);
+        border: 1px solid #D4DFE5;
         border-radius: 14px;
         margin-bottom: 16px;
     }
@@ -226,7 +226,7 @@ st.markdown("""
         font-size: .92rem;
         letter-spacing: .07em;
         color: var(--seal-color) !important;
-        background: #FFFDF8;
+        background: #F9FBFC;
         white-space: nowrap;
     }
     .seal-meta { flex: 1; }
@@ -245,47 +245,47 @@ st.markdown("""
 
     /* Notes */
     .ledger-note {
-        border: 1px solid #D8E1DB;
+        border: 1px solid #D3DCE2;
         border-left: 4px solid var(--sage);
         border-radius: 9px;
-        background: #F1F6F2;
+        background: #EDF3F6;
         padding: 12px 15px;
         font-size: .81rem;
-        color: #405149 !important;
+        color: #243447 !important;
         margin-top: 13px;
         line-height: 1.5;
     }
     .ledger-note.consensus {
         border-left-color: var(--sage);
         background: var(--sage-soft);
-        color: #315644 !important;
+        color: #1F3A50 !important;
     }
     .ledger-note.conflict {
         border-left-color: var(--danger);
-        background: #FBECE9;
-        color: #713F3A !important;
+        background: #F1E3DC;
+        color: #6B3730 !important;
         font-weight: 600;
     }
 
     .id-code {
         font-family: monospace;
         font-size: .82rem;
-        background: #F2EEE5;
-        color: #4D554F !important;
+        background: #E7EEF2;
+        color: #47586A !important;
         padding: 2px 6px;
         border-radius: 5px;
     }
 
     /* Dataframe / expander */
     [data-testid="stDataFrame"] {
-        border: 1px solid #DCE2DD;
+        border: 1px solid #D7DFE5;
         border-radius: 10px;
         overflow: hidden;
     }
     div[data-testid="stExpander"] {
-        border: 1px solid #D8E1DB !important;
+        border: 1px solid #D3DCE2 !important;
         border-radius: 10px !important;
-        background: #FBFAF6 !important;
+        background: #F6F9FA !important;
     }
 
     footer { visibility: hidden; }
@@ -1057,37 +1057,37 @@ def verify_paper_v3(title, journal_title, doi, pissn, eissn, volume, issue, year
 # --- PDF Export Engine ---
 class PDFReport(FPDF):
     def header(self):
-        self.set_fill_color(95, 141, 120)       # sage
+        self.set_fill_color(61, 106, 138)       # sage
         self.rect(0, 0, 210, 7, "F")
         self.set_y(13)
         self.set_font("Times", "B", 15)
-        self.set_text_color(63, 107, 89)
+        self.set_text_color(39, 74, 99)
         self.cell(0, 8, "OFFICE OF RESEARCH, INNOVATION & COMMERCIALIZATION", ln=True, align="C")
         self.set_font("Times", "", 9.5)
-        self.set_text_color(92, 103, 96)
+        self.set_text_color(76, 88, 100)
         self.cell(0, 6, "Research Paper Verification & Cross-Registry Audit Report", ln=True, align="C")
         self.ln(5)
 
     def footer(self):
         self.set_y(-16)
-        self.set_draw_color(217, 222, 216)
+        self.set_draw_color(214, 222, 229)
         self.line(12, self.get_y(), 198, self.get_y())
         self.ln(2)
         self.set_font("Times", "I", 8)
-        self.set_text_color(115, 123, 118)
+        self.set_text_color(108, 120, 133)
         self.cell(0, 8, f"ORIC Research Verification System  |  Page {self.page_no()}", align="C")
 
     def section_title(self, title):
         self.set_font("Times", "B", 11)
-        self.set_text_color(63, 107, 89)
+        self.set_text_color(39, 74, 99)
         self.cell(0, 7, sanitize_for_pdf(title).upper(), ln=True)
-        self.set_draw_color(190, 207, 196)
+        self.set_draw_color(211, 224, 230)
         self.line(12, self.get_y(), 198, self.get_y())
         self.ln(3)
 
     def body(self, text, size=9.5):
         self.set_font("Times", "", size)
-        self.set_text_color(45, 55, 50)
+        self.set_text_color(34, 48, 63)
         self.multi_cell(0, 5, sanitize_for_pdf(text))
         self.ln(2)
 
@@ -1110,11 +1110,11 @@ def sanitize_for_pdf(text):
 
 def _pdf_status_color(status):
     return {
-        STATUS_VERIFIED: (63, 107, 89),
-        STATUS_PARTIAL: (180, 122, 60),
-        STATUS_SUSPICIOUS: (182, 91, 85),
-        STATUS_NOT_FOUND: (100, 112, 105)
-    }.get(status, (100, 112, 105))
+        STATUS_VERIFIED: (39, 74, 99),
+        STATUS_PARTIAL: (185, 138, 62),
+        STATUS_SUSPICIOUS: (181, 82, 74),
+        STATUS_NOT_FOUND: (76, 88, 100)
+    }.get(status, (76, 88, 100))
 
 
 def generate_pdf(status, confidence, df, journal_info, links, api_coverage, rationale,
@@ -1125,24 +1125,24 @@ def generate_pdf(status, confidence, df, journal_info, links, api_coverage, rati
     pdf.add_page()
 
     # Report identity strip
-    pdf.set_fill_color(247, 241, 231)
+    pdf.set_fill_color(243, 230, 214)
     pdf.rect(12, 40, 186, 31, style="F", round_corners=True, corner_radius=3)
     pdf.set_xy(18, 45)
     pdf.set_font("Times", "B", 10)
-    pdf.set_text_color(63, 107, 89)
+    pdf.set_text_color(39, 74, 99)
     pdf.cell(37, 6, "REPORT STATUS")
     r, g, b = _pdf_status_color(status)
     pdf.set_text_color(r, g, b)
     pdf.set_font("Times", "B", 13)
     pdf.cell(55, 6, sanitize_for_pdf(status))
     pdf.set_font("Times", "", 9)
-    pdf.set_text_color(70, 78, 73)
+    pdf.set_text_color(76, 88, 100)
     pdf.cell(42, 6, "Confidence")
     pdf.set_font("Times", "B", 12)
     pdf.set_text_color(r, g, b)
     pdf.cell(30, 6, f"{confidence}%")
     pdf.set_font("Times", "", 8.5)
-    pdf.set_text_color(90, 98, 93)
+    pdf.set_text_color(82, 105, 122)
     pdf.ln(9)
     pdf.set_x(18)
     pdf.cell(0, 5, "Generated: " + datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
@@ -1157,8 +1157,8 @@ def generate_pdf(status, confidence, df, journal_info, links, api_coverage, rati
     )
 
     if doi_title_conflict:
-        pdf.set_fill_color(251, 236, 233)
-        pdf.set_text_color(113, 63, 58)
+        pdf.set_fill_color(241, 227, 220)
+        pdf.set_text_color(107, 55, 48)
         pdf.set_font("Times", "B", 9)
         pdf.multi_cell(0, 6, sanitize_for_pdf(
             "DOI / title conflict detected: the supplied DOI resolves to a registered publication "
@@ -1182,10 +1182,10 @@ def generate_pdf(status, confidence, df, journal_info, links, api_coverage, rati
         for label, value in rows:
             if value:
                 pdf.set_font("Times", "B", 9)
-                pdf.set_text_color(63, 107, 89)
+                pdf.set_text_color(39, 74, 99)
                 pdf.cell(36, 5, sanitize_for_pdf(label) + ":")
                 pdf.set_font("Times", "", 9)
-                pdf.set_text_color(45, 55, 50)
+                pdf.set_text_color(34, 48, 63)
                 pdf.multi_cell(0, 5, sanitize_for_pdf(value))
                 pdf.ln(.5)
 
@@ -1211,10 +1211,10 @@ def generate_pdf(status, confidence, df, journal_info, links, api_coverage, rati
         for label, value in record_rows:
             if value:
                 pdf.set_font("Times", "B", 9)
-                pdf.set_text_color(63, 107, 89)
+                pdf.set_text_color(39, 74, 99)
                 pdf.cell(36, 5, sanitize_for_pdf(label) + ":")
                 pdf.set_font("Times", "", 9)
-                pdf.set_text_color(45, 55, 50)
+                pdf.set_text_color(34, 48, 63)
                 pdf.multi_cell(0, 5, sanitize_for_pdf(value))
                 pdf.ln(.5)
 
@@ -1223,7 +1223,7 @@ def generate_pdf(status, confidence, df, journal_info, links, api_coverage, rati
     col_widths = [30, 51, 51, 25, 20]
     headers = ["Field", "Submitted", "Registry Match", "Status", "Score"]
 
-    pdf.set_fill_color(95, 141, 120)
+    pdf.set_fill_color(61, 106, 138)
     pdf.set_text_color(255, 255, 255)
     pdf.set_font("Times", "B", 8)
     for w, h in zip(col_widths, headers):
@@ -1239,7 +1239,7 @@ def generate_pdf(status, confidence, df, journal_info, links, api_coverage, rati
             row.get("Score", ""),
         ]
         pdf.set_font("Times", "", 7.5)
-        pdf.set_text_color(45, 55, 50)
+        pdf.set_text_color(34, 48, 63)
         # Multi-line rows: use a compact one-line textual audit entry.
         line = " | ".join(sanitize_for_pdf(v) for v in values)
         pdf.multi_cell(0, 5, line, border="B")
@@ -1406,17 +1406,17 @@ with col_right:
          primary_record) = st.session_state.results
 
         status_config = {
-            STATUS_VERIFIED: "#2e8b74",
-            STATUS_PARTIAL: "#b06000",
-            STATUS_SUSPICIOUS: "#6b1d24",
-            STATUS_NOT_FOUND: "#52606d"
+            STATUS_VERIFIED: "#2E7D7D",
+            STATUS_PARTIAL: "#A66A1E",
+            STATUS_SUSPICIOUS: "#6B2430",
+            STATUS_NOT_FOUND: "#4C5E70"
         }
-        seal_color = status_config.get(overall_status, "#52606d")
+        seal_color = status_config.get(overall_status, "#4C5E70")
 
         chips_html = "".join([f'<span class="registry-chip">{api}</span>' for api in api_coverage]) or \
             '<span class="registry-chip">none returned a match</span>'
         st.markdown(f"""
-        <div style="margin-bottom: 12px; font-size: 0.82rem; color: #3d4852;">
+        <div style="margin-bottom: 12px; font-size: 0.82rem; color: #2C3B49;">
             <strong>Indexed registries consulted:</strong><br/>{chips_html}
         </div>
         """, unsafe_allow_html=True)
@@ -1465,11 +1465,11 @@ with col_right:
             st.markdown(f"""
             <div class="panel-header" style="font-size:1rem; margin-top: 4px;">
                 Registry-Discovered Record
-                <span style="font-family:'IBM Plex Sans',sans-serif; font-weight:400; font-size:0.75rem; color:#6b1d24; text-transform:none; letter-spacing:0;">
+                <span style="font-family:'IBM Plex Sans',sans-serif; font-weight:400; font-size:0.75rem; color:#6B2430; text-transform:none; letter-spacing:0;">
                     &nbsp;&mdash; via {primary_record.get('source','')}{match_note}
                 </span>
             </div>
-            <div style="font-size:0.88rem; line-height:1.7; color:#2c3e50;">
+            <div style="font-size:0.88rem; line-height:1.7; color:#22303F;">
                 <strong>Title:</strong> {primary_record.get('title') or 'Not listed'}<br/>
                 <strong>Authors:</strong> {authors_line}<br/>
                 <strong>Journal:</strong> {journal_line}<br/>
@@ -1509,7 +1509,7 @@ with col_right:
             st.markdown("**Indexed Links & Sources**")
             st.markdown(links_text)
 
-        st.markdown("<hr style='margin: 16px 0; border: 0; border-top: 1px solid #d8dee6;'/>", unsafe_allow_html=True)
+        st.markdown("<hr style='margin: 16px 0; border: 0; border-top: 1px solid #D5DDE5;'/>", unsafe_allow_html=True)
 
         with st.expander("Inspect raw registry responses"):
             for api_name, data in api_results.items():
@@ -1559,8 +1559,8 @@ with col_right:
             )
     else:
         st.markdown("""
-        <div style="text-align:center; padding: 60px 20px; color:#66736D; background: #F1F6F2; border: 1px dashed #b9c2bb;">
-            <div style="font-size: 0.95rem; font-family: 'Source Serif 4', Georgia, serif; color:#3F6B59;">
+        <div style="text-align:center; padding: 60px 20px; color:#55677A; background: #EDF3F6; border: 1px dashed #B7C2CC;">
+            <div style="font-size: 0.95rem; font-family: 'Source Serif 4', Georgia, serif; color:#274A63;">
                 Awaiting Paper Metadata
             </div>
             <div style="font-size: 0.82rem; margin-top: 6px;">
@@ -1573,7 +1573,7 @@ with col_right:
 
 # Footer
 st.markdown("""
-<div style="text-align:center; color:#66736D; font-size:0.78rem; margin-top: 30px;">
+<div style="text-align:center; color:#55677A; font-size:0.78rem; margin-top: 30px;">
     Office of Research, Innovation and Commercialization (ORIC) &middot; Official Verification Portal<br>
     Connected Registries: Crossref &middot; DOAJ &middot; DataCite &middot; PubMed &middot; OpenCitations &middot; ISSN Portal
 </div>
