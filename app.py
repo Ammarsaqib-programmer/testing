@@ -1126,7 +1126,7 @@ def generate_pdf(status, confidence, df, journal_info, links, api_coverage, rati
 
     # Report identity strip
     pdf.set_fill_color(247, 241, 231)
-    pdf.rounded_rect(12, 40, 186, 31, 3, "F")
+    pdf.rect(12, 40, 186, 31, style="F", round_corners=True, corner_radius=3)
     pdf.set_xy(18, 45)
     pdf.set_font("Times", "B", 10)
     pdf.set_text_color(63, 107, 89)
